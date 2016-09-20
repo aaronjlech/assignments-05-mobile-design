@@ -158,9 +158,14 @@ a{
 @media screen and (min-width: 1024px){
    .img-container{
       width: 25%;
+      position: relative;
    }
 
    .nav-footer{
+      position: absolute;
+      top: 80%;
+
+      max-width: 960px;
       .standard-footer{
          .footer-link{
             display: none;
