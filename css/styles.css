@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", sans-serif; }
+
+img {
+  width: 100%;
+  display: block; }
+
+a {
+  text-decoration: none; }
+
+#app-container {
+  max-width: 960px;
+  margin: 0 auto; }
+
+.column-container {
+  font-size: 0; }
+  .column-container > * {
+    vertical-align: top;
+    font-size: medium;
+    display: inline-block; }
+
+.nav-header a {
+  color: #747474;
+  font-size: 11px; }
+.nav-header .mobile-header div {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 5%; }
+.nav-header .mobile-header .logo {
+  width: 50%;
+  margin: 0 auto; }
+.nav-header .mobile-header .menu {
+  font-weight: bold; }
+.nav-header .standard-header {
+  display: none; }
+
+.img-body {
+  margin-bottom: 2%; }
+
+.img-container {
+  width: 50%; }
+
+.nav-footer .standard-footer {
+  display: none; }
+.nav-footer .footer-link {
+  width: 25px;
+  padding: 5px;
+  margin: 0 auto 2% auto;
+  background: #747474; }
+  .nav-footer .footer-link a {
+    color: #aaa; }
+.nav-footer .search {
+  margin: 0 auto;
+  border: 2px solid rgba(110, 110, 110, 0.5);
+  width: 100px; }
+  .nav-footer .search input {
+    width: 70px;
+    border: none; }
+  .nav-footer .search i {
+    color: rgba(110, 110, 110, 0.5); }
+
+@media screen and (min-width: 768px) {
+  .nav-header .mobile-header {
+    display: none; }
+  .nav-header .standard-header {
+    width: 100%;
+    display: inline-block; }
+    .nav-header .standard-header .logo {
+      width: 25%; }
+    .nav-header .standard-header .filter {
+      padding: 5px 2% 5px 60%;
+      border-right: 1px #747474 solid; }
+    .nav-header .standard-header .menu {
+      padding: 5px 0 5px 2%; }
+
+  .nav-footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    top: 94%;
+    background: rgba(255, 255, 255, 0.8); }
+    .nav-footer .mobile-footer {
+      display: none; }
+    .nav-footer .standard-footer {
+      width: 100%;
+      display: inline-block; }
+      .nav-footer .standard-footer .search-wrapper {
+        padding: 10px;
+        width: 20%; }
+      .nav-footer .standard-footer .link-wrapper {
+        padding: 7px;
+        width: 55%; }
+
+  .img-container {
+    width: 33.3333%; } }
+@media screen and (min-width: 1024px) {
+  .img-container {
+    width: 25%; }
+
+  .nav-footer .standard-footer .footer-link {
+    display: none; } }
+
+/*# sourceMappingURL=styles.css.map */

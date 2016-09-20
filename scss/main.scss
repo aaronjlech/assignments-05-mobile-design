@@ -1,0 +1,171 @@
+$theme-color: #747474;
+$theme-alpha: rgba(110, 110, 110, 0.5);
+
+
+*{ box-sizing: border-box }
+
+
+body{
+   font-family: 'Helvetica Neue', 'Helvetica', sans-serif
+}
+img {
+   width: 100%;
+   display: block;
+}
+a{
+   text-decoration: none;
+}
+
+#app-container{
+   max-width: 960px;
+   margin: 0 auto;
+}
+.column-container{
+   font-size: 0;
+   > *{
+      vertical-align: top;
+      font-size: medium;
+      display: inline-block;
+   }
+
+
+}
+// ----MOBILE STYLES----
+.nav-header{
+   a{
+      color: $theme-color;
+      font-size: 11px;
+   }
+
+
+   .mobile-header{
+
+
+      div{
+         width: 100%;
+         text-align: center;
+         padding-bottom: 5%;
+      }
+
+      .logo{
+         width: 50%;
+         margin: 0 auto;
+      }
+      .menu{
+         font-weight: bold;
+      }
+
+   }
+   .standard-header{
+      display: none;
+   }
+
+}
+.img-body{
+   margin-bottom: 2%;
+}
+.img-container{
+   width: 50%;
+}
+.nav-footer{
+   .standard-footer{
+      display: none;
+   }
+   .footer-link{
+      width: 25px;
+      padding: 5px;
+      margin: 0 auto 2% auto;
+      background: $theme-color;
+         a{color: #aaa ;}
+
+   }
+   .search{
+      margin: 0 auto;
+      border: 2px solid $theme-alpha;
+      width: 100px;
+      input{
+         width: 70px;
+         border: none;
+      }
+      i{color:$theme-alpha}
+   }
+}
+
+
+
+// TABLET STYLES
+@media screen and (min-width: 768px){
+   .nav-header{
+      .mobile-header{
+         display: none;
+      }
+
+      .standard-header{
+         width: 100%;
+         display: inline-block;
+
+         .logo{
+
+            width: 25%;
+         }
+         .filter{
+            padding: 5px 2% 5px 60%;
+            border-right: 1px $theme-color solid;
+         }
+         .menu{
+            padding: 5px 0 5px 2%;
+         }
+      }
+   }
+      .nav-footer{
+         position: fixed;
+         width: 100%;
+         bottom: 0;
+         top: 94%;
+         background: rgba(255, 255, 255, 0.8);
+
+         .mobile-footer{
+            display: none;
+         }
+         .standard-footer{
+            width: 100%;
+            display: inline-block;
+
+            .search-wrapper{
+               padding: 10px;
+               width: 20%;
+            }
+            .link-wrapper{
+               padding: 7px;
+               width: 55%;
+
+            }
+
+         }
+
+      }
+
+
+
+   .img-container{
+      width: 33.3333%;
+   }
+
+
+
+}
+// full-screen layout
+@media screen and (min-width: 1024px){
+   .img-container{
+      width: 25%;
+   }
+
+   .nav-footer{
+      .standard-footer{
+         .footer-link{
+            display: none;
+         }
+      }
+   }
+
+}
